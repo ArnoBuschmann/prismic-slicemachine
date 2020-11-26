@@ -1,0 +1,37 @@
+[{
+  "primary": {
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "A train is a form of rail transport consisting of a series of connected vehicles that generally run along a railroad (or railway) track to transport passengers or cargo (also known as \"freight\" or \"goods\"). The word \"train\" comes from the Old French trahiner, derived from the Latin trahere meaning \"to pull\" or \"to draw\".",
+        "spans": [
+          {
+            "start": 11,
+            "end": 36,
+            "type": "strong"
+          },
+          {
+            "start": 63,
+            "end": 81,
+            "type": "hyperlink",
+            "data": {
+              "link_type": "Web",
+              "url": "https://prismic.io",
+              "target": "_blank"
+            }
+          },
+          {
+            "start": 169,
+            "end": 206,
+            "type": "strong"
+          },
+          {
+            "start": 216,
+            "end": 224,
+            "type": "em"
+          }
+        ]
+      }
+    ]
+  }
+}]

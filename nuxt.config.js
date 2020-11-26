@@ -33,7 +33,16 @@ export default {
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [],
+  buildModules: ["@nuxtjs/tailwindcss"],
+  tailwindcss: {
+    config: {
+      purge: {
+        content: [
+          "slices/**/**.vue"
+        ]
+      }
+    }
+  },
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [["@nuxtjs/prismic", {
     endpoint: smConfig.apiEndpoint || "",
@@ -47,5 +56,9 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     transpile: ["vue-slicezone", "nuxt-sm"]
-  }
+  },
+  storybook: {
+    stories: ["~/slices/**/*.stories.js"]
+  },
+  ignore: ["**/*.stories.js"]
 };
